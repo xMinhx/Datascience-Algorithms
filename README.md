@@ -2,7 +2,7 @@
 
 This program converts given constraints and function into a linear program for GLPK
 
-## Example 1 - Generate regression for given points
+## Example 1 - Generate regression for given points (lp_regression.py)
 
 ```py
 x = [1.55, 1.57, 1.62, 1.68, 1.75, 1.76, 1.81, 1.83, 1.87, 1.89, 1.9, 1.92, 1.95, 1.96, 1.99, 2.02]
@@ -50,7 +50,7 @@ visualization of GLPK results:
 ![image](https://user-images.githubusercontent.com/55718218/127593267-a7fd6366-f2cc-40e0-9a3d-f91b1b1c2efb.png)
 
 
-## Example 2 - Generate hyperplane for two given classes
+## Example 2 - Generate hyperplane for two given classes (lp_hyperplane.py)
 
 ```py 
 hyper = create_lp_hyper(["c","x"], ["free", "free"], x1, y1, x2, y2, delta=False)
