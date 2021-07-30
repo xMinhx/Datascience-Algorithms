@@ -53,7 +53,8 @@ visualization of GLPK results:
 ## Example 2 - Generate hyperplane for two given classes (lp_hyperplane.py)
 
 ```py 
-hyper = create_lp_hyper(["c","x"], ["free", "free"], x1, y1, x2, y2, delta=False)
+#x1, y1, x2, y2 are arrays
+hyper = create_lp_hyper(["c","x"], ["free", "free"], x1, y1, x2, y2, separable=False)
 print(hyper)
 ```
 
